@@ -10,11 +10,41 @@ personal log:
 
 /* Creating scaffold
 
-        rails generate scaffold Article title:string description:text
+        - rails generate scaffold Article title:string description:text
+
+/* Delete scaffold 
+		- rails destroy scaffold articles
 
 /* Create the tables from the migration folder
 
         - rake db:migrate
 
 
+/* Roll back migration 
+
+		- rake db:rollback STEP=1
+
+
+/* MIGRATIONS
+		* create migrations 
+				- rails generate migration create_articles
+				- rails generate migration add_description_to_articles
+
+		* Provide fields in a table
+				- t.string :title
+
+		* adding columns into adjustmnet add_descriptoin_to_articles
+				- add_column :articles, :description, :text
+
+/* Model
+		* create a model like article.rb > class Article < ActiveRecord::Base
+				- go to console "rails console"
+				- article = Article.new  // create new article object
+				- Article.all // direct and get all articles
+				- Article.create(title: "Article Title", description: "Article Descirption") // insert a record
+				- article = Article.find(1) // find a record
+				- article.destroy // destroy the current object record
+
+		* Validate a model in entering a nil data
+				- inside a model like Article, put this code "validates :title, presence: true"
 This is the repository for the issues app 
