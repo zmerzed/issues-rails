@@ -1,5 +1,9 @@
 heroku link: https://issues-remzfernandez.herokuapp.com/
 
+personal log:
+
+	- adding computer ubuntu from office
+
 /* Show routes
 
         - rake routes
