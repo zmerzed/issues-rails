@@ -47,4 +47,17 @@ personal log:
 
 		* Validate a model in entering a nil data
 				- inside a model like Article, put this code "validates :title, presence: true"
+				
+	    * To check why saving object model failed
+	            - article.erros.any? // return true if there's an error 
+	            - if theres true then type.. 
+	                - article.errors.full_messages
+	                
+/* Routes
+        * Provide a basic list routes using resources
+                -- resources :articles
+   
+/* Templates or Display
+        * To display some plain pages
+                - inside in action method provide.. render plain: params[:article].inspect
 This is the repository for the issues app 
