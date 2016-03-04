@@ -1,2 +1,16 @@
 heroku link: https://issues-remzfernandez.herokuapp.com/
+
+/* Show routes
+
+        - rake routes
+
+/* Creating scaffold
+
+        rails generate scaffold Article title:string description:text
+
+/* Create the tables from the migration folder
+
+        - rake db:migrate
+
+
 This is the repository for the issues app 
