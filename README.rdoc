@@ -4,6 +4,8 @@ personal log:
 
 	- adding computer ubuntu from office
 
+/* GIT
+        - to create another branch.. -> git checkout -b branch-name
 /* Show routes
 
         - rake routes
