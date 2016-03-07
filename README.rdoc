@@ -6,6 +6,8 @@ personal log:
 
 /* GIT
         - to create another branch.. -> git checkout -b branch-name
+        - to merge a branch.. -> git merge branch-name (note. go to branch and git add the commit and go to master to see changes)
+        - to delete a branch.. -> git branch -d branch-name
 /* Show routes
 
         - rake routes
@@ -37,7 +39,8 @@ personal log:
 
 		* adding columns into adjustmnet add_descriptoin_to_articles
 				- add_column :articles, :description, :text
-
+        
+        * create a users migrations: -> rails generate migration create_users -> t.string :username, t.string :email, t.timestamps
 /* Model
 		* create a model like article.rb > class Article < ActiveRecord::Base
 				- go to console "rails console"
@@ -54,7 +57,8 @@ personal log:
 	            - article.erros.any? // return true if there's an error 
 	            - if theres true then type.. 
 	                - article.errors.full_messages
-	                
+	    
+	    *            
 /* Routes
         * Provide a basic list routes using resources
                 -- resources :articles
